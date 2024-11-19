@@ -1,0 +1,179 @@
+*{
+
+    --corPrimaria: #FFF2D8;
+    --corPrimariaB: #EAD7BB;
+    --corSecundária: #BCA37F;
+    --corSecundáriaB: #113946;
+
+}
+
+body{
+
+    background-color: var(--corSecundáriaB);
+    color: var(--corPrimaria);
+
+}
+
+.navbar-brand img{
+
+    height: 40px;
+    border-radius: 100%;
+}
+
+.imagens figure{
+
+    background-image: url("img/img-08.jpg");
+    background-size: cover;
+
+}
+
+.imagens-01 figure{
+
+    background-image: url("img/img-04.jpg");
+    background-size: cover;
+
+}
+
+.imagens-02 figure{
+
+    background-image: url("img/img-05.jpg");
+    background-size: cover;
+
+}
+
+.dark-text{
+
+    color: var(--corSecundáriaB);
+
+}
+
+header{
+
+    height: 80vh;
+    background-image: url("img/img-05.jpg");
+    background-size: cover;
+
+}
+
+article{
+
+    border-radius: 10px;
+
+}
+
+article p{
+
+    text-align: justify;
+
+}
+
+.card .botao .btn{
+
+    border: 1px solid var(--corSecundáriaB);
+
+}
+
+.card .botao .btn:hover{
+
+    border: 1px solid var(--corSecundáriaB);
+    background-color: var(--corSecundáriaB);
+    color: var(--corPrimaria);
+
+}
+
+.galeriaa{
+
+    height: 25vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+#fig-01{
+
+    background-image: url("img/img-01.jpg");
+
+}
+
+#fig-02{
+
+    background-image: url("img/img-02.jpg");
+
+}
+
+#fig-03{
+
+    background-image: url("img/img-03.jpg");
+
+}
+
+#fig-04{
+
+    background-image: url("img/img-04.jpg");
+
+}
+
+#fig-05{
+
+    background-image: url("img/img-05.jpg");
+
+}
+
+#fig-06{
+
+    background-image: url("img/img-06.jpg");
+
+}
+
+#fig-07{
+
+    background-image: url("img/img-07.jpg");
+
+}
+
+#fig-08{
+
+    background-image: url("img/img-08.jpg");
+
+}
+
+#fig-09{
+
+    background-image: url("img/img-09.jpg");
+
+}
+
+#fig-10{
+
+    background-image: url("img/img-01.jpg");
+
+}
+
+#fig-11{
+
+    background-image: url("img/img-02.jpg");
+
+}
+
+#fig-12{
+
+    background-image: url("img/img-03.jpg");
+
+}
+
+
+footer{
+
+    height: 40vh;
+    background-color: var(--corSecundária);
+}
+
+
