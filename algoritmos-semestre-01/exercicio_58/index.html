@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 58</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let valor_base = parseFloat(prompt("Digite o valor da base:"));
+        let altura = parseFloat(prompt("Digite o valor da altura:"));
+        
+        if(valor_base >= 0 && altura >= 0 ){
+
+            let area = (valor_base*altura)/2;
+            let hipotenusa = (valor_base**2) + (altura**2)
+            document.getElementById("resultado").innerHTML = `A área do triaangulo é ${area}cm e sua hipotenusa é ${hipotenusa}cm`
+
+        }else{
+
+            document.getElementById("resultado").innerHTML = `ERRO!! o número é negativo!`
+
+        }
+
+    </script>
+</body>
+</html>

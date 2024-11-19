@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 45</title>
+</head>
+<body>
+
+    <h1 id="valor_quilowatt"></h1>
+    <h1 id="valor_a_pagar" ></h1>
+    <h1 id="valor_com_desconto"></h1>
+
+    <script>
+
+        let salario_minimo = 700;
+        let gastos_quilowatts = 100; 
+        let quilowatts = salario_minimo/7;
+        let custo_por_quilowatt = quilowatts/gastos_quilowatts;
+        let valor_total = custo_por_quilowatt*gastos_quilowatts;
+        let valor_desconto = valor_total*10/100;
+        document.getElementById("valor_quilowatt").innerHTML = `Preço por quilowatt: R$ ${custo_por_quilowatt}`;
+        document.getElementById("valor_a_pagar").innerHTML = `Valor a pagar R$ ${valor_total}`;
+        document.getElementById("valor_com_desconto").innerHTML = `Valor a pagar com desconto de 10%: R$ ${valor_desconto}`;
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

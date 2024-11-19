@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Exercicio 53</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let populacao_inicial = parseFloat(prompt("Digite a população inicial:"));
+        let taxa_crescimento_anual = parseFloat(prompt("Digite a taxa de crescimento anual:"));
+        let calculo = populacao_inicial*taxa_crescimento_anual/100;
+        let populacao_final = populacao_inicial+calculo;;
+
+        document.getElementById("resultado").innerHTML = `Após 1 ano a população final será de ${populacao_final}`
+
+
+    </script>
+</body>
+</html>

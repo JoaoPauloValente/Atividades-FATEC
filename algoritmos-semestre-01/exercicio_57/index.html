@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 57</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let numero = parseFloat(prompt("Digite um número:"))
+
+        if(numero%2 == 0){
+
+            let potencia = Math.pow(numero, 2)
+            document.getElementById("resultado").innerHTML = `O número ${numero} é par e ${numero} elevado a 2 é: ${potencia}`
+
+        }else{
+
+            let ao_cubo = Math.pow(numero, 3)
+            document.getElementById("resultado").innerHTML = `O número ${numero} é impar e ${numero} elevado a 3 é: ${ao_cubo}`
+
+        }
+
+    </script>
+</body>
+</html>

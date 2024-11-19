@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 51</title>
+</head>
+<body>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+
+        let nota_a = parseFloat(prompt("Digite o valor da primeira nota:"))
+        let nota_b = parseFloat(prompt("Digite o valor da segunda nota:"))
+        let nota_c = parseFloat(prompt("Digite o valor da terceira nota:"))
+        let nota_d = parseFloat(prompt("Digite o valor da quarta nota:"))
+        let nota_e = parseFloat(prompt("Digite o valor da quinta nota:"))
+        let nota_aritmetica = (nota_a+nota_b+nota_c+nota_d+nota_e)/5;
+
+        console.log(`O valor da nota final é: ${nota_aritmetica}`);
+        document.getElementById("resultado").innerHTML = `A nota final é: ${nota_aritmetica}`;
+
+    </script>
+</body>
+</html>

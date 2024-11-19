@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 63</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+            let num01 = parseFloat(prompt("Insira um valor:"));
+            let num02 = parseFloat(prompt("Insira um 2º valor:"));
+            let num03 = parseFloat(prompt("Insira um 3º valor:"));
+            let calculo = Math.pow(num01,2)+Math.pow(num02,2)+Math.pow(num03,2);
+            
+
+            if(calculo%2 == 0){
+
+                document.getElementById("resultado").innerHTML = `O resultado da soma dos valores ao quadrado é: ${calculo}, e o número é PAR!` 
+
+            }else{
+
+                document.getElementById("resultado").innerHTML = `O resultado da soma dos valores ao quadrado é: ${calculo}, e o número é IMPAR!` 
+
+
+            }
+
+    </script>
+</body>
+</html>

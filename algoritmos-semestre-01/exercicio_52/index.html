@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 52</title>
+</head>
+<body>
+
+    <h1 id="gorjeta"></h1>
+    <h1 id="total"></h1>
+
+    <script>
+
+        let valor_conta = parseFloat(prompt("Digite o valor da conta:"));
+        let valor_gorjeta = parseFloat(prompt("Digite o valor da porcentagem da gorjeta:"));
+        let calculo_gorjeta = (valor_conta*valor_gorjeta)/100;
+        let total_pagar = valor_conta+calculo_gorjeta;
+
+        document.getElementById("gorjeta").innerHTML = `O valor da gorjeta é: R$${calculo_gorjeta} `
+        document.getElementById("total").innerHTML = `O valor total é: R$${total_pagar} `
+
+    </script>
+    
+</body>
+</html>

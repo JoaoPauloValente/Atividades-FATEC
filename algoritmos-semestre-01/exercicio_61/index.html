@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 61</title>
+</head>
+<body>
+
+<h1 id="resultado"></h1>
+<h1 id="resultado_1"></h1>
+<h1 id="resultado_2"></h1>
+
+    <script>
+
+        let valor_1 = parseFloat(prompt("Insira o 1º número:"))
+        let valor_2 = parseFloat(prompt("Insira o 2º número:"))
+        let valor_3 = parseFloat(prompt("Insira o 3º número:"))
+
+        if(valor_1 > 0 ){
+
+            document.getElementById("resultado").innerHTML = `O número ${valor_1} é positivo`;
+            
+        }else if(valor_1 < 0){
+
+            document.getElementById("resultado").innerHTML = `O número ${valor_1} é negativo`;
+
+        }else{
+
+            document.getElementById("resultado").innerHTML = `O número ${valor_1} é nulo`;
+
+        }
+
+        if(valor_2 > 0 ){
+
+        document.getElementById("resultado_1").innerHTML = `O número ${valor_2} é positivo`;
+
+        }else if(valor_2 < 0){
+
+        document.getElementById("resultado_1").innerHTML = `O número ${valor_2} é negativo`;
+
+        }else{
+
+        document.getElementById("resultado_1").innerHTML = `O número ${valor_2} é nulo`;
+
+        }
+
+
+        if(valor_3 > 0 ){
+
+        document.getElementById("resultado_2").innerHTML = `O número ${valor_3} é positivo`;
+
+        }else if(valor_3 < 0){
+
+        document.getElementById("resultado_2").innerHTML = `O número ${valor_3} é negativo`;
+
+        }else{
+
+        document.getElementById("resultado_2").innerHTML = `O número ${valor_3} é nulo`;
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 60</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let numero_digitado = parseFloat(prompt("Digite um valor:"));
+
+        if(numero_digitado > 0 && numero_digitado%2 == 0){
+
+            let elevado_a_2 = Math.pow(numero_digitado,2)
+            let elevado_a_3 = Math.pow(numero_digitado,3)
+            let elevado_a_7 = Math.pow(numero_digitado,7)
+            document.getElementById("resultado").innerHTML = `O número digitado foi: ${numero_digitado}<br>
+            Seu valor elevado ao quadrado é: ${elevado_a_2}<br>
+            Seu valor elevado ao cubo é: ${elevado_a_3}<br>
+            Seu valor elevado a sétima é: ${elevado_a_7}`;
+
+        }else if(numero_digitado%2 > 0){
+
+            let raiz_quadrada = Math.sqrt(numero_digitado,2)
+            let raiz_cubica = Math.cbrt(numero_digitado,3)
+            let raiz_a_setima = Math.cbrt(numero_digitado,7)
+            document.getElementById("resultado").innerHTML = `O número digitado foi: ${numero_digitado}<br>
+            Sua raiz quadrada é: ${raiz_quadrada}<br>
+            Sua raiz cúbica é: ${raiz_cubica}<br>
+            Sua raiz a sétima é: ${raiz_a_setima}`;
+
+
+        }else{
+
+            document.getElementById("resultado").innerHTML = `ERRO!!! O número é negativo!!` 
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 62</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let valor_a = parseFloat(prompt("Insira um valor:"));
+        let valor_b = parseFloat(prompt("Insiraa o segundo valor para a soma::"))
+        let soma = valor_a + valor_b;
+
+        if(soma > 10){
+
+            let raiz_cubica = Math.cbrt(soma, 3)
+            document.getElementById("resultado").innerHTML = `Os números inseridos foram ${valor_a} e ${valor_b}<br>
+            Sua soma é: ${soma} e sua raiz cúbica é ${raiz_cubica}`;
+
+        }else{
+
+            document.getElementById("resultado").innerHTML = `Os números inseridos foram ${valor_a} e ${valor_b}<br>
+            Sua soma é: ${soma}`;
+
+        }
+
+    </script>
+</body>
+</html>

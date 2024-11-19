@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 56</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+    
+
+    <script>
+
+        let nota_a = parseFloat(prompt("1º nota:"))
+        let nota_b = parseFloat(prompt("2º nota:"))
+        let nota_c = parseFloat(prompt("3º nota:"))
+        let media_aritmetica = (nota_a+nota_b+nota_c)/3;
+
+        if(media_aritmetica >= 7.50){
+
+            document.getElementById("resultado").innerHTML = `Nota final:${media_aritmetica} Aprovado: SIM`
+
+        }else{
+
+            document.getElementById("resultado").innerHTML = `Nota final:${media_aritmetica} Aprovado: NÃO`
+
+        }
+
+    </script>
+</body>
+</html>

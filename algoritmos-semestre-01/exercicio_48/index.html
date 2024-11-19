@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 48</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        let salario = parseFloat(prompt(`Digite o valor do salário:`));
+        let aumento = salario*25/100;
+        let valor_final = aumento+salario;
+        console.log(`O novo salário após o aumento de 25% será de: R$${valor_final}`)
+        document.getElementById("resultado").innerHTML = `O novo salário após o aumento de 25% será de: R$${valor_final}`;
+
+    </script>
+</body>
+</html>

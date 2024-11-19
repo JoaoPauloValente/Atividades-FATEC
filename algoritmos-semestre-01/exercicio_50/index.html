@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 50</title>
+</head>
+
+    <h1 id="resultado"></h1>
+    <h1 id="resultado_2"></h1>
+    <h1 id="resultado_3"></h1>
+    <h1 id="resultado_4"></h1>
+    <h1 id="resultado_5"></h1>
+
+<body>
+      
+    <script>
+
+        let produto_a = parseFloat(prompt("Digite o valor do 1º produto:"));
+        let produto_b = parseFloat(prompt("Digite o valor do 2º produto:"));   
+        let produto_c = parseFloat(prompt("Digite o valor do 3º produto:"));
+        let valor_sem_desconto= produto_a+produto_b+produto_c;
+        let desconto_10 = valor_sem_desconto*10/100;
+        let desconto_20 = valor_sem_desconto*20/100;
+        let desconto_30 = valor_sem_desconto*30/100;
+        let desconto_50 = valor_sem_desconto*50/100;
+        let resultado_10 = valor_sem_desconto-desconto_10
+        let resultado_20 = valor_sem_desconto-desconto_20
+        let resultado_30 = valor_sem_desconto-desconto_30
+        let resultado_50 = valor_sem_desconto-desconto_50
+
+        console.log(`O valor sem desconto será de: R$${valor_sem_desconto}`)
+        console.log(`O valor com desconto de 10% será de: R$${resultado_10}`)   
+        console.log(`O valor com desconto de 20% será de: R$${resultado_20}`)  
+        console.log(`O valor com desconto de 30% será de: R$${resultado_30}`)  
+        console.log(`O valor com desconto de 50% será de: R$${resultado_50}`)  
+        
+        document.getElementById("resultado").innerHTML = `O valor sem desconto será de: R$${valor_sem_desconto}`;
+        document.getElementById("resultado_2").innerHTML = `O valor com desconto de 10% será de: R$${resultado_10}`;
+        document.getElementById("resultado_3").innerHTML = `O valor com desconto de 20% será de: R$${resultado_20}`;
+        document.getElementById("resultado_4").innerHTML = `O valor com desconto de 30% será de: R$${resultado_30}`;
+        document.getElementById("resultado_5").innerHTML = `O valor com desconto de 50% será de: R$${resultado_50}`;
+
+    </script>
+
+</body>
+</html>
