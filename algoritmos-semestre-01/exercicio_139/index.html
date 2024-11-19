@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Análise de Palavra</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Análise de Palavra</h2>
+
+  <form>
+    <div class="mb-3">
+      <label for="nomeInput" class="form-label">Insira uma palavra:</label>
+      <input type="text" class="form-control" id="nomeInput" required>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="analisarPalavra()">Analisar</button>
+  </form>
+
+  <div class="mt-3" id="resultados">
+    <!-- Os resultados serão exibidos aqui -->
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  function analisarPalavra() {
+    const nomeInput = document.getElementById('nomeInput');
+    const palavra = nomeInput.value.toLowerCase();
+
+    // Exibe a palavra original
+    let resultadosHTML = `<p>Palavra: ${palavra}</p>`;
+
+    // Exibe a palavra separada por um traço
+    const palavraComTraco = palavra.split('').join('-');
+    resultadosHTML += `<p>Palavra com traço: ${palavraComTraco}</p>`;
+
+    // Exibe a quantidade de caracteres na palavra
+    const quantidadeCaracteres = palavra.length;
+    resultadosHTML += `<p>Quantidade de caracteres: ${quantidadeCaracteres}</p>`;
+
+    // Exibe a quantidade de vogais
+    const quantidadeVogais = palavra.match(/[aeiou]/g) ? palavra.match(/[aeiou]/g).length : 0;
+    resultadosHTML += `<p>Quantidade de vogais: ${quantidadeVogais}</p>`;
+
+    // Exibe a quantidade de consoantes
+    const quantidadeConsoantes = quantidadeCaracteres - quantidadeVogais;
+    resultadosHTML += `<p>Quantidade de consoantes: ${quantidadeConsoantes}</p>`;
+
+    // Exibe a palavra substituindo as vogais por @
+    const palavraComVogaisSubstituidas = palavra.replace(/[aeiou]/g, '@');
+    resultadosHTML += `<p>Palavra com vogais substituídas: ${palavraComVogaisSubstituidas}</p>`;
+
+    // Exibe a palavra substituindo as consoantes por #
+    const palavraComConsoantesSubstituidas = palavra.replace(/[bcdfghjklmnpqrstvwxyz]/g, '#');
+    resultadosHTML += `<p>Palavra com consoantes substituídas: ${palavraComConsoantesSubstituidas}</p>`;
+
+    // Atualiza a div de resultados
+    document.getElementById('resultados').innerHTML = resultadosHTML;
+  }
+</script>
+
+</body>
+</html>
