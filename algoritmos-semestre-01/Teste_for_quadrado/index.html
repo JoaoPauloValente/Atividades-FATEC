@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Bootstrap e JavaScript</title>
+  <!-- Inclua os arquivos de estilo do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Adicione estilos adicionais aqui, se necessário */
+    .result-container {
+      margin-top: 20px;
+    }
+    .result-box {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulário Simples</h2>
+  <form id="myForm">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Mensagem:</label>
+      <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="exibirResultado()">Enviar</button>
+  </form>
+
+  <div id="result-container" class="result-container"></div>
+</div>
+
+<!-- Inclua o jQuery e o Popper.js antes do Bootstrap.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Array para armazenar os dados
+  var dadosArmazenados = [];
+
+  function exibirResultado() {
+    // Obtenha os valores do formulário
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    // Crie um objeto com os dados do formulário
+    var dados = {
+      nome: nome,
+      email: email,
+      mensagem: mensagem
+    };
+
+    // Adicione o objeto à array
+    dadosArmazenados.push(dados);
+
+    // Exiba os resultados em quadrados separados
+    exibirQuadrados();
+  }
+
+  function exibirQuadrados() {
+    // Limpe o conteúdo do contêiner de resultados
+    document.getElementById('result-container').innerHTML = '';
+
+    // Exiba cada conjunto de dados em um quadrado separado
+    dadosArmazenados.forEach(function(dados, index) {
+      var resultado = '<div class="result-box">' +
+                      '<h4>Resultado ' + (index + 1) + ':</h4>' +
+                      '<p><strong>Nome:</strong> ' + dados.nome + '</p>' +
+                      '<p><strong>E-mail:</strong> ' + dados.email + '</p>' +
+                      '<p><strong>Mensagem:</strong> ' + dados.mensagem + '</p>' +
+                      '</div>';
+
+      // Adicione o quadrado ao contêiner de resultados
+      document.getElementById('result-container').innerHTML += resultado;
+    });
+  }
+</script>
+
+</body>
+</html>
+
