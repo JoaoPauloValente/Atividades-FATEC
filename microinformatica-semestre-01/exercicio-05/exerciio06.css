@@ -1,0 +1,76 @@
+header{
+
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    padding: 10px 0 10px 0;
+
+}
+
+main{
+
+    padding: 30px 75px 0 75px;
+
+}
+
+main h1{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+figure img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.artigo_01{
+
+    display: flex;
+    margin-top: 50px;
+    
+
+}
+
+.artigo_01 p{
+
+    text-align: justify;
+
+}
+
+.texto{
+
+    padding-left: 30px;
+
+}
+
+.texto_02 p{
+
+    text-align: justify;
+
+}
+
+.texto_02{
+
+    text-align: justify;
+    margin-top: 30px
+
+}
+
+.img_container{
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.img_container img{
+
+    border-radius: 100%;
+   
+}

@@ -1,0 +1,54 @@
+    :root{
+
+        --cor_primaria: #618624;
+        --cor_secundaria: #D0E7D2;
+        --cor_primaria_B: #79AC78;
+        --cor_secundaria_B: #B0D9B1;
+
+    }
+
+    .bg-green{
+
+        background-color: var(--cor_primaria);
+
+    }
+
+    .bg-green .nav-link,
+    .bg-green .nav-link.active{
+
+        color: var(--cor_secundaria);
+
+    }
+
+    .navbar-brand img{
+
+        border-radius: 50%;
+        height: 50px;
+
+    }
+
+   
+    .btn-green{
+
+        background-color: var(--cor_primaria);
+        color: var(--cor_secundaria);
+
+    }
+
+    .btn-green:hover{
+
+        background-color: var(--cor_secundaria);
+        color: var(--cor_primaria);
+        border: 1px solid var(--cor_primaria);
+
+    }
+
+    .sec-img{
+
+        height: 60vh;
+        background-image: url("img/portal-magico-na-paisagem-do-planeta-alienigena_107791-6249.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--cor_secundaria);
+
+    }
